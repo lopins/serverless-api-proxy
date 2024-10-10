@@ -1,0 +1,66 @@
+{
+    "version": 2,
+    "github": {
+        "silent": true,
+        "deploymentEnabled": {
+          "main": true
+        }
+    },
+    "routes": [
+        {
+            "src": "/gemini/v1/(.*)",
+            "dest": "https://generativelanguage.googleapis.com/v1/$1"
+        },
+        {
+            "src": "/gemini/v1beta/(.*)",
+            "dest": "https://generativelanguage.googleapis.com/v1beta/$1"
+        },
+        {
+            "src": "/openai/v1/(.*)",
+            "dest": "https://api.openai.com/v1/$1"
+        },
+        {
+            "src": "/groq/openai/v1/(.*)",
+            "dest": "https://api.groq.com/openai/v1/$1"
+        },
+        {
+            "src": "/claude/v1/(.*)",
+            "dest": "https://api.anthropic.com/v1/$1"
+        },
+        {
+            "src": "/cohere/v1/(.*)",
+            "dest": "https://api.cohere.ai/v1/$1"
+        },
+        {
+            "src": "/huggingface/(.*)",
+            "dest": "https://api-inference.huggingface.co/$1"
+        },
+        {
+            "src": "/fireworks/v1/(.*)",
+            "dest": "https://api.fireworks.ai/inference/v1/$1"
+        },
+        {
+            "src": "/together/v1/(.*)",
+            "dest": "https://api.together.xyz/v1/$1"
+        },
+        {
+            "src": "/novita/v3/(.*)",
+            "dest": "https://api.novita.ai/v3/$1"
+        },
+        {
+            "src": "/novita/v3beta/(.*)",
+            "dest": "https://api.novita.ai/v3beta/$1"
+        },
+        {
+            "src": "/portkey/v1/(.*)",
+            "dest": "https://api.portkey.ai/v1/$1"
+        },
+        {
+            "src": "/openrouter/v1/(.*)",
+            "dest": "https://openrouter.ai/api/v1/$1"
+        }
+    ],
+    "regions": [
+        "iad1"
+    ]
+}
