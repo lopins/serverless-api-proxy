@@ -1,0 +1,58 @@
+{
+    "version": 2,
+    "github": {
+        "silent": true,
+        "deploymentEnabled": {
+          "main": true
+        }
+    },
+    "routes": [
+        {
+            "src": "/openai/(.*)",
+            "dest": "https://api.openai.com/$1"
+        },
+        {
+            "src": "/claude/(.*)",
+            "dest": "https://api.anthropic.com/$1"
+        },
+        {
+            "src": "/gemini/(.*)",
+            "dest": "https://generativelanguage.googleapis.com/$1"
+        },
+        {
+            "src": "/groq/(.*)",
+            "dest": "https://api.groq.com/$1"
+        },
+        {
+            "src": "/cohere/(.*)",
+            "dest": "https://api.cohere.ai/$1"
+        },
+        {
+            "src": "/huggingface/(.*)",
+            "dest": "https://api-inference.huggingface.co/$1"
+        },
+        {
+            "src": "/together/(.*)",
+            "dest": "https://api.together.xyz/$1"
+        },
+        {
+            "src": "/novita/(.*)",
+            "dest": "https://api.novita.ai/$1"
+        },
+        {
+            "src": "/portkey/(.*)",
+            "dest": "https://api.portkey.ai/$1"
+        },
+        {
+            "src": "/fireworks/(.*)",
+            "dest": "https://api.fireworks.ai/$1"
+        },
+        {
+            "src": "/openrouter/(.*)",
+            "dest": "https://openrouter.ai/api/$1"
+        }
+    ],
+    "regions": [
+        "iad1"
+    ]
+}

@@ -1,0 +1,58 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/openai/*"
+  to = "https://api.openai.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/claude/*"
+  to = "https://api.anthropic.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/gemini/*"
+  to = "https://generativelanguage.googleapis.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/groq/*"
+  to = "https://api.groq.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/cohere/*"
+  to = "https://api.cohere.ai/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/huggingface/*"
+  to = "https://api-inference.huggingface.co/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/together/*"
+  to = "https://api.together.xyz/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/novita/*"
+  to = "https://api.novita.ai/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/portkey/*"
+  to = "https://api.portkey.ai/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/fireworks/*"
+  to = "https://api.fireworks.ai/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/openrouter/*"
+  to = "https://openrouter.ai/api/:splat"
+  status = 200

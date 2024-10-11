@@ -1,0 +1,10 @@
+{
+    "name": "serverless-api-proxy",
+    "version": "1.0.0",
+    "description": "Multi-API Proxy Gateway Based on Vercel Routes, Cloudflare Workers, and Netlify Redirects",
+    "scripts": {
+      "build": "echo 'No build step required.'"
+    },
+    "author": "https://github.com/lopins",
+    "license": "MIT"
+  }
