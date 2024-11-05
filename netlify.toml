@@ -3,6 +3,16 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/discord/*"
+  to = "https://discord.com/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/telegram/*"
+  to = "https://api.telegram.org/:splat"
+  status = 200
+
+[[redirects]]
   from = "/openai/*"
   to = "https://api.openai.com/:splat"
   status = 200
@@ -18,8 +28,18 @@
   status = 200
 
 [[redirects]]
+  from = "/meta/*"
+  to = "https://www.meta.ai/api/:splat"
+  status = 200
+
+[[redirects]]
   from = "/groq/*"
   to = "https://api.groq.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/x/*"
+  to = "https://api.x.ai/:splat"
   status = 200
 
 [[redirects]]

@@ -8,6 +8,14 @@
     },
     "routes": [
         {
+            "src": "/discord/(.*)",
+            "dest": "https://discord.com/api/$1"
+        },
+        {
+            "src": "/telegram/(.*)",
+            "dest": "https://api.telegram.org/$1"
+        },
+        {
             "src": "/openai/(.*)",
             "dest": "https://api.openai.com/$1"
         },
@@ -20,8 +28,16 @@
             "dest": "https://generativelanguage.googleapis.com/$1"
         },
         {
+            "src": "/meta/(.*)",
+            "dest": "https://www.meta.ai/api/$1"
+        },
+        {
             "src": "/groq/(.*)",
             "dest": "https://api.groq.com/$1"
+        },
+        {
+            "src": "/x/(.*)",
+            "dest": "https://api.x.ai/$1"
         },
         {
             "src": "/cohere/(.*)",
